@@ -50,7 +50,7 @@
 
 .nav-links input{
     border-radius: 2em;
-    padding: px;
+    padding: 3px;
     outline: none;
     border: none;
 }
@@ -347,11 +347,7 @@
     margin: 50px;
 }
 
-.description{
-    margin-top: 10px;
-}
-
-.text{
+.text, .text2{
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 2;
@@ -362,9 +358,10 @@
     grid-column: 3;
 }
 .plant-price-box{
-    height: 250px;
-    width: 500px;
-
+    height: 300px;
+    width: 500px;   
+    margin-left: 15%;
+    margin-top: 100px;
     box-shadow: rgb(153 153 153 / 40%) 0px 2px 5px;
 
 }
@@ -373,7 +370,7 @@
     position: inherit;
     padding-top: 50px;
     margin: 50px;
-    box-shadow:rgb(153 153 153 / 40%) 0px 2px 5px; 
+    /*box-shadow:rgb(153 153 153 / 40%) 0px 2px 5px; */
 }
 
 .price-tag{
@@ -390,14 +387,23 @@
 
 }
 
-/*.add-button{
+.add-button{
     display: inline-block;
     position: relative;
-    z-index: -1;
-    padding: 2em;
-    margin: -2em;
-}*/
+    padding: 1.5em;
+    margin: -50px 0px 0 35%;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: limegreen;
+    transition: background-color 0.4s;
+}
 
+.add-button:hover{
+    background: rgb(0, 95, 0);
+    cursor: pointer;
+}
 @media (max-width: 1150px) {
 
     .header {
@@ -452,7 +458,8 @@
         background: white;
         top: 8px;
         transition: transform 0.4s,
-            top 0.4s background 0.4s;
+            top 0.4s,
+            background 0.4s;
     }
 
     .burger-container.active .burger::after {
