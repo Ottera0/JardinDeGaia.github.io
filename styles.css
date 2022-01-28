@@ -48,6 +48,12 @@
     transition: transform 0.4s;
 }
 
+.nav-links input{
+    border-radius: 2em;
+    padding: px;
+    outline: none;
+    border: none;
+}
 .nav-links a::before {
     content: attr(data-text);
     position: absolute;
@@ -291,31 +297,106 @@
 }
 
 .footer {
-    min-height: 100px;
+    min-height: 200px;
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 25px;
     justify-content: space-between;
     padding: 0 100px;
     flex-wrap: wrap;
+    background: linear-gradient(0deg,rgb(177, 175, 175),10%, white);
 }
 
-.copyright {
-    padding-right: 20px;
-}
 
-.equipe {
+.team .copyright{
     color: black;
     text-decoration: none;
     font-weight: 600;
 }
 
-.nav-links input{
-    border-radius: 2em;
-    padding: px;
-    outline: none;
-    border: none;
+
+
+/*Product description*/
+
+.product-tab{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
 }
+
+.product-container {
+    padding: 0 100px;
+    min-height: 80vh;
+    margin-top: 50px;
+}
+
+.img-product{
+    grid-column: 1 ;
+    padding: 25px 25px;
+}
+
+.product-text{
+    grid-column: 2;
+    padding: 25px
+}
+
+.pros {
+    font-weight: bold;
+    padding-top: 50px;
+}
+.pros2 li{
+    margin: 50px;
+}
+
+.description{
+    margin-top: 10px;
+}
+
+.text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.plant-price-column{
+    grid-column: 3;
+}
+.plant-price-box{
+    height: 250px;
+    width: 500px;
+
+    box-shadow: rgb(153 153 153 / 40%) 0px 2px 5px;
+
+}
+
+.plant-price-box2{
+    position: inherit;
+    padding-top: 50px;
+    margin: 50px;
+    box-shadow:rgb(153 153 153 / 40%) 0px 2px 5px; 
+}
+
+.price-tag{
+    font-family: "Abril Fatface", cursive;
+    font-size: 60px;
+    text-align: left;
+    margin: 0px -5px 20px;
+}
+
+.unit{
+    font-family: "Abril Fatface", cursive;
+    text-align: right;
+    font-size: 30px;
+
+}
+
+/*.add-button{
+    display: inline-block;
+    position: relative;
+    z-index: -1;
+    padding: 2em;
+    margin: -2em;
+}*/
 
 @media (max-width: 1150px) {
 
