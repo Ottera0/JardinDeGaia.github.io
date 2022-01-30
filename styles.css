@@ -50,7 +50,7 @@
 
 .nav-links input{
     border-radius: 2em;
-    padding: 3px;
+    padding: 1px;
     outline: none;
     border: none;
 }
@@ -146,7 +146,7 @@
 }
 
 .best-sales-container {
-    min-height: 80vh;
+    min-height: 60vh;
     background: white;
     padding: 0 100px;
 }
@@ -320,7 +320,7 @@
 
 .product-tab{
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(4 , 1fr);
 }
 
 .product-container {
@@ -331,35 +331,36 @@
 
 .img-product{
     grid-column: 1 ;
-    padding: 25px 25px;
+    margin-top: 25px;
+    margin-left: -20px;
 }
 
 .product-text{
-    grid-column: 2;
+    grid-column: 2/4;
     padding: 25px
 }
 
 .pros {
     font-weight: bold;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .pros2 li{
-    margin: 50px;
+    margin: 2em;
 }
 
 .text, .text2{
     margin-top: 20px;
     margin-bottom: 20px;
-    line-height: 2;
+    line-height: 2em;
     text-align: justify;
 }
 
 .plant-price-column{
-    grid-column: 3;
+    grid-column: 4;
 }
 .plant-price-box{
     height: 300px;
-    width: 500px;   
+    width: 400px;   
     margin-left: 15%;
     margin-top: 100px;
     box-shadow: rgb(153 153 153 / 40%) 0px 2px 5px;
@@ -391,7 +392,7 @@
     display: inline-block;
     position: relative;
     padding: 1.5em;
-    margin: -50px 0px 0 35%;
+    margin: -50px 0px 0 30%;
     color: white;
     border: none;
     outline: none;
@@ -401,9 +402,98 @@
 }
 
 .add-button:hover{
-    background: rgb(0, 95, 0);
+    background: rgb(6, 124, 6);
     cursor: pointer;
 }
+
+.deliveries{
+    margin-top: 50px;
+    margin-left: 20%;
+}
+
+.delivery-mode{
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+.delivery-choice li{
+    padding: 1em;
+}
+
+/* Panier*/
+
+.panier{
+    min-height: 60vh;
+    background: white;
+    padding: 0 100px;
+    margin-top: 50px;
+}
+
+.panier-tab{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 400px);
+    row-gap: 25px;
+    column-gap: 50px;
+    margin-top: 50px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.article1{
+    grid-column: 1/4;
+    grid-row: 1;
+    box-shadow: rgb(153 153 153 / 40%) 0px 2px 5px;
+    background: rgb(241, 241, 232);
+}
+
+.article2{
+    grid-column: 1/4;
+    grid-row: 2;
+    box-shadow: rgb(153 153 153 / 40%) 0px 2px 5px;
+    background: rgb(241, 241, 232);
+}
+
+.total-box{
+    grid-column: 4;
+    grid-row: 1;
+    box-shadow: rgb(153 153 153 / 40%) 0px 2px 5px;
+    background: rgb(241, 241, 232);
+
+}
+
+.article1-content, .article2-content{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.article1-info, .article2-info{
+    position: relative ;
+    top:-300px; left: 225px;
+}
+
+.article1-unit-price, .article2-unit-price{
+    margin-top: 50px;
+}
+
+.article2 .article2-content .article1-info .article-modification{
+    text-align: right;
+}
+.far{
+    margin-top: 10px;
+    top: -35px; left: 90px;
+}
+
+
+table{
+    margin-top: 20px;
+    border-collapse: collapse;
+    
+}
+td{
+    border: 2px solid grey;
+    padding: 5px;
+}
+
+
 @media (max-width: 1150px) {
 
     .header {
