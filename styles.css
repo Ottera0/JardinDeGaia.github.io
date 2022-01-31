@@ -637,6 +637,7 @@ hr{
     .img-product{
         display: flex;
         flex-wrap: wrap;
+        margin-right: 25px;
     }
     .grid {
         flex: 1;
@@ -695,7 +696,17 @@ hr{
     .plant-box::before {
         font-size: 20px;
     }
+    
+    .plant-price-box{
+        width: 300px;
+    }
 
+    .plant-price-column{
+        margin-left: 0;
+    }
+    .unit{
+        text-align: center;
+    }
     .img-product img{
         width: 300px;
         height: auto;
