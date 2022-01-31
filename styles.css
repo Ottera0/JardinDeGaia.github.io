@@ -24,6 +24,22 @@
     padding: 0 50px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Barre de navigation*/ 
+
 .logo {
     width: 180px;
 }
@@ -118,6 +134,11 @@
     color: white;
 }
 
+
+
+
+/* Icones livraisons*/ 
+
 .delivery-container {
     min-height: 300px;
     background: white;
@@ -145,6 +166,13 @@
     text-align: center;
 }
 
+
+
+
+
+
+/*Accueil et promos */
+
 .best-sales-container {
     min-height: 60vh;
     background: white;
@@ -156,6 +184,12 @@
     font-family: "Abril Fatface", cursive;
     font-size: 50px;
     font-weight: 100;
+}
+
+h2{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-decoration:  underline rgb(93, 219, 21);
 }
 
 .section-title::before {
@@ -231,6 +265,17 @@
     font-weight: 300;
     font-size: 15px;
 }
+
+
+
+
+
+
+
+
+/*Nos plantes*/
+
+
 
 .plants-container {
     padding: 0 100px;
@@ -316,7 +361,26 @@
 
 
 
-/*Product description*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Description produit*/
 
 .product-tab{
     display: flex;
@@ -414,6 +478,25 @@ margin-left: 50px;
 .delivery-choice li{
     padding: 1em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Panier*/
 
@@ -531,6 +614,19 @@ hr{
     justify-content: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Achat*/
 
 .achat{
@@ -544,6 +640,17 @@ hr{
     margin-top: 50px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /*Qui Sommes-nous ?*/
 
 .qui-sommes-nous {
@@ -552,16 +659,42 @@ hr{
     text-align: center;
 }
 
-.qui-sommes-nous h2{
-    margin-top: 2em;
-    margin-bottom: 2em;
-    text-decoration:  underline rgb(93, 219, 21);
-}
-
 .map{
     margin-top: 2em;
     border: 2px solid rgb(90, 36, 36);
 }
+
+
+
+
+
+
+
+
+/*Details techniques*/
+
+.details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    min-height: 80vh;
+    margin-top: 50px;
+}
+
+.description{
+    margin: 2em 0;
+
+}
+.description li{
+    margin-top: 0.5em;
+}
+
+.details-text{
+    line-height: 1.5em;
+}
+
+
 
 @media (max-width: 1500px) {
 
@@ -574,7 +707,6 @@ hr{
     }
 
 }
-
 
 
 
@@ -687,6 +819,7 @@ hr{
         font-size: 30px;
         text-align: center;
     }
+
 
     .plant-box {
         min-width: 300px;
