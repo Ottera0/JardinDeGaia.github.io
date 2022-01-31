@@ -319,25 +319,24 @@
 /*Product description*/
 
 .product-tab{
-    display: grid;
-    grid-template-columns: repeat(4 , 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.product-container {
+/*.product-container {
     padding: 0 100px;
     min-height: 80vh;
     margin-top: 50px;
-}
+}*/
 
 .img-product{
-    grid-column: 1 ;
-    margin-top: 25px;
-    margin-left: -20px;
+margin-left: 5%;
+margin-right: 50px;
 }
 
 .product-text{
-    grid-column: 2/4;
-    padding: 25px
+flex-wrap: wrap;
 }
 
 .pros {
@@ -356,7 +355,7 @@
 }
 
 .plant-price-column{
-    grid-column: 4;
+margin-right: 5%;
 }
 .plant-price-box{
     height: 300px;
@@ -679,6 +678,11 @@ hr{
         margin: 30px;
     }
 
+    .article-description{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     .grid-plants, .product-tab{
         display: flex;
         flex-wrap: wrap;
