@@ -422,76 +422,160 @@
 /* Panier*/
 
 .panier{
-    min-height: 60vh;
     background: white;
     padding: 0 100px;
     margin-top: 50px;
 }
 
 .panier-tab{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 400px);
-    row-gap: 25px;
-    column-gap: 50px;
-    margin-top: 50px;
-    grid-auto-rows: minmax(100px, auto);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:60px;
 }
 
-.article1{
-    grid-column: 1/4;
-    grid-row: 1;
+.article, .total{
+    margin-right: 20px;
+    margin-bottom:40px;
     box-shadow: rgb(153 153 153 / 40%) 0px 2px 5px;
     background: rgb(241, 241, 232);
 }
 
-.article2{
-    grid-column: 1/4;
-    grid-row: 2;
-    box-shadow: rgb(153 153 153 / 40%) 0px 2px 5px;
-    background: rgb(241, 241, 232);
+.article-description{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+.article-unit-price{
+    margin-top: 2em;
 }
 
-.total-box{
-    grid-column: 4;
-    grid-row: 1;
-    box-shadow: rgb(153 153 153 / 40%) 0px 2px 5px;
-    background: rgb(241, 241, 232);
-
+.article-info{
+    padding-left: 2em;
+    padding-top:1em;
 }
 
-.article1-content, .article2-content{
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
-.article1-info, .article2-info{
-    position: relative ;
-    top:-300px; left: 225px;
-}
-
-.article1-unit-price, .article2-unit-price{
-    margin-top: 50px;
-}
-
-.article2 .article2-content .article1-info .article-modification{
-    text-align: right;
-}
 .far{
-    margin-top: 10px;
+    margin-top: 1em;
     top: -35px; left: 90px;
 }
 
+.article-total{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    font-weight: bolder;
+}
 
 table{
-    margin-top: 20px;
+    margin-top: 1em;
     border-collapse: collapse;
     
 }
 td{
     border: 2px solid grey;
-    padding: 5px;
+    padding: 0.5em;
 }
+
+.total-products, .total-delivery{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin : 1em;
+    font-weight: bolder;
+}
+
+hr{
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    width: 95%;
+}
+.total-price{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin : 2em;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.buy-button{
+    display: inline-block;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 75px;
+    background: limegreen;
+    transition: background-color 0.4s;
+}
+.buy-button:hover{
+    background: rgb(6, 124, 6);
+    cursor: pointer;
+}
+
+.total-buy{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+/*Achat*/
+
+.achat{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accueil-button{
+    margin-top: 50px;
+}
+
+/*Qui Sommes-nous ?*/
+
+.qui-sommes-nous {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.qui-sommes-nous h2{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-decoration:  underline rgb(93, 219, 21);
+}
+
+.map{
+    margin-top: 2em;
+    border: 2px solid rgb(90, 36, 36);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1150px) {
@@ -595,12 +679,16 @@ td{
         margin: 30px;
     }
 
-    .grid-plants {
+    .grid-plants, .product-tab{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
+    .img-product{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .grid {
         flex: 1;
         min-width: 350px;
