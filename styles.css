@@ -589,7 +589,6 @@ hr{
         flex-direction: column;
         align-items: flex-end;
         margin-top: 400px;
-        margin-right: -400px;
     }
 
 
@@ -671,7 +670,6 @@ hr{
         flex-wrap: wrap;
         align-items: flex-end;
         margin-top: 400px;
-        margin-right: -50%;
     }
     .nav-links a {
         font-size: 15px;
@@ -713,20 +711,15 @@ hr{
         height: auto;
     }
 }
-@media (max-width: 750px) {
 
-}
 
 
 @media (max-width: 450px) {
-    .nav-links {
-        margin-right: -20%;
-    }
-    
+
     .nav-links a{
         font-size: 11px;
     }
     .footer {
-        justify-content: center;
+        font-size: 12px;
     }
 }
