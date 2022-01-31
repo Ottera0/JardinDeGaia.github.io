@@ -324,14 +324,13 @@
     justify-content: space-between;
 }
 
-/*.product-container {
-    padding: 0 100px;
+.product-container {
+    padding: 0 50px;
     min-height: 80vh;
     margin-top: 50px;
-}*/
+}
 
 .img-product{
-margin-left: 5%;
 margin-right: 50px;
 }
 
@@ -355,13 +354,11 @@ flex-wrap: wrap;
 }
 
 .plant-price-column{
-margin-right: 5%;
+margin-left: 50px;
 }
 .plant-price-box{
     height: 300px;
-    width: 400px;   
-    margin-left: 15%;
-    margin-top: 100px;
+    width: 350px;   
     box-shadow: rgb(153 153 153 / 40%) 0px 2px 5px;
 
 }
@@ -406,8 +403,8 @@ margin-right: 5%;
 }
 
 .deliveries{
-    margin-top: 50px;
-    margin-left: 20%;
+   margin-top: 50px;
+   text-align: center;
 }
 
 .delivery-mode{
@@ -566,7 +563,17 @@ hr{
     border: 2px solid rgb(90, 36, 36);
 }
 
+@media (max-width: 1500px) {
 
+    .product-tab, .img-product{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
 
 
 
@@ -687,6 +694,11 @@ hr{
     .plant-name,
     .plant-box::before {
         font-size: 20px;
+    }
+
+    .img-product img{
+        width: 300px;
+        height: auto;
     }
 
     .plant-price {
