@@ -436,7 +436,6 @@ margin-right: 5%;
 }
 
 .article, .total{
-    margin-right: 20px;
     margin-bottom:40px;
     box-shadow: rgb(153 153 153 / 40%) 0px 2px 5px;
     background: rgb(241, 241, 232);
@@ -448,6 +447,8 @@ margin-right: 5%;
     margin-top: 3em;
     margin-left: 3em;
 }
+
+
 .article-unit-price{
     margin-top: 2em;
 }
@@ -683,6 +684,18 @@ hr{
         flex-direction: column;
         flex-wrap: wrap;
     }
+
+    .article-image img{
+        width: 150px;
+        height: auto;
+    }
+
+    .article-info{
+        text-align: center;
+
+    }
+
+
     .grid-plants, .product-tab{
         display: flex;
         flex-wrap: wrap;
@@ -744,7 +757,14 @@ hr{
     .plant-price {
         font-size: 10px;
     }
-
+    .buy-button{
+        padding: 1em;
+        font-size: 1em;
+    }
+    .total-price{
+        margin: 1em;
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 400px) {
