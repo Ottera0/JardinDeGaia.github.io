@@ -430,8 +430,8 @@ margin-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top:60px;
 }
 
@@ -691,7 +691,7 @@ hr{
     }
 
     .article-info{
-        text-align: center;
+        text-align: left;
 
     }
 
@@ -723,7 +723,10 @@ hr{
     .header,
     .best-sales-container,
     .plants-container,
-    .footer {
+    .footer,
+    .product-container,
+    .panier
+    {
         padding: 0 7%;
     }
 
@@ -764,6 +767,12 @@ hr{
     .total-price{
         margin: 1em;
         font-size: 1em;
+    }
+    .article-info{
+        font-size: 0.7em;
+    }
+    td{
+        padding: 0.2em;
     }
 }
 
